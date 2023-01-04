@@ -14,23 +14,30 @@ use optional::use_optional;
 mod results;
 use results::use_result;
 
+// use arrays
+mod array_slice;
+use array_slice::arrays;
+
 fn main() {
     println!("Start Program");
 
     //modules
-    println!("Modules");
+    println!("\nModules");
     hello::hello_world();
 
     //type of return values
-    println!("Type of returns");
+    println!("\nType of returns");
     println!("sum_without_return :: {}", sum::sum_without_return(8, 9));
     println!("sum_return :: {}", sum::sum_return(5, 6));
 
-    println!("Optional");
+    println!("\nOptional");
     use_optional::run_optional();
 
 
-    println!("Result");
+    println!("\nResult");
     use_result::run_result();
+
+    println!("Arrays & Slice");
+    arrays::show_arrays();
 
 }
