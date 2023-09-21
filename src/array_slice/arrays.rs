@@ -17,7 +17,7 @@ pub fn show_arrays() {
     }
 
     let slc2 = &arr[0..2];
-    println!("\n Array to Slice, only the first 2 elements");
+    println!("\nArray to Slice, only the first 2 elements");
     for a in slc2 {
         println!("value {}", a);
     }

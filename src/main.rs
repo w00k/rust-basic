@@ -37,7 +37,7 @@ fn main() {
     println!("\nResult");
     use_result::run_result();
 
-    println!("Arrays & Slice");
+    println!("\nArrays & Slice");
     arrays::show_arrays();
 
 }
