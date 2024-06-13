@@ -18,6 +18,10 @@ use results::use_result;
 mod array_slice;
 use array_slice::arrays;
 
+// use tuple
+mod tuple;
+use tuple::tuple_example;
+
 fn main() {
     println!("Start Program");
 
@@ -39,5 +43,8 @@ fn main() {
 
     println!("\nArrays & Slice");
     arrays::show_arrays();
+
+    println!("\nTuple");
+    tuple_example::tuple_example();
 
 }
